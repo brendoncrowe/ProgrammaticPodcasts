@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="podcastCell" id="eav-Sc-90m" customClass="PodcastCell" customModule="ProgrammaticPodcasts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="OgA-Q6-3vc">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dKa-fu-LAB">
+                        <rect key="frame" x="8" y="7.6666666666666643" width="120" height="119.66666666666669"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="PKT-PE-pVU"/>
+                            <constraint firstAttribute="width" constant="120" id="pv1-gA-gZJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podacst Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otM-Zt-kvH">
+                        <rect key="frame" x="136" y="22" width="244" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcast Collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB3-Qp-Saw">
+                        <rect key="frame" x="136" y="63" width="244" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="dKa-fu-LAB" firstAttribute="leading" secondItem="OgA-Q6-3vc" secondAttribute="leading" constant="8" id="9gl-RF-Hi2"/>
+                    <constraint firstItem="WB3-Qp-Saw" firstAttribute="top" secondItem="otM-Zt-kvH" secondAttribute="bottom" constant="20" id="Aeq-0t-DBa"/>
+                    <constraint firstItem="otM-Zt-kvH" firstAttribute="leading" secondItem="dKa-fu-LAB" secondAttribute="trailing" constant="8" symbolic="YES" id="Ikx-n4-7At"/>
+                    <constraint firstItem="dKa-fu-LAB" firstAttribute="top" secondItem="OgA-Q6-3vc" secondAttribute="top" constant="8" id="Lej-4y-kb6"/>
+                    <constraint firstAttribute="trailing" secondItem="WB3-Qp-Saw" secondAttribute="trailing" constant="20" symbolic="YES" id="SH4-e3-fAm"/>
+                    <constraint firstItem="otM-Zt-kvH" firstAttribute="top" secondItem="OgA-Q6-3vc" secondAttribute="top" constant="22" id="TpP-fe-pnP"/>
+                    <constraint firstAttribute="trailing" secondItem="otM-Zt-kvH" secondAttribute="trailing" constant="20" symbolic="YES" id="aCu-IP-aJx"/>
+                    <constraint firstAttribute="bottom" secondItem="dKa-fu-LAB" secondAttribute="bottom" constant="8" id="d8u-zM-viR"/>
+                    <constraint firstItem="WB3-Qp-Saw" firstAttribute="leading" secondItem="dKa-fu-LAB" secondAttribute="trailing" constant="8" symbolic="YES" id="hjP-z5-kjo"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="555" height="239"/>
+            <connections>
+                <outlet property="podcastCollectionLabel" destination="WB3-Qp-Saw" id="jgD-8o-Lu1"/>
+                <outlet property="podcastImageView" destination="dKa-fu-LAB" id="Umz-U1-7CW"/>
+                <outlet property="podcastNameLabel" destination="otM-Zt-kvH" id="PK6-Iy-ZW6"/>
+            </connections>
+            <point key="canvasLocation" x="341.98473282442745" y="-10.563380281690142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mic.fill" catalog="system" width="110" height="128"/>
+    </resources>
+</document>

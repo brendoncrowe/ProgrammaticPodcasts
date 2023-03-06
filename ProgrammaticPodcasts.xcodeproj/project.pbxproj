@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		4007931329B67966007E495D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007931229B67966007E495D /* AppDelegate.swift */; };
 		4007931529B67966007E495D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007931429B67966007E495D /* SceneDelegate.swift */; };
-		4007931729B67966007E495D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007931629B67966007E495D /* ViewController.swift */; };
-		4007931A29B67966007E495D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007931829B67966007E495D /* Main.storyboard */; };
 		4007931C29B67967007E495D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4007931B29B67967007E495D /* Assets.xcassets */; };
 		4007931F29B67967007E495D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007931D29B67967007E495D /* LaunchScreen.storyboard */; };
+		4007932829B67B33007E495D /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4007932729B67B33007E495D /* ImageKit */; };
+		4007932A29B67B58007E495D /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007932929B67B58007E495D /* PodcastViewController.swift */; };
+		4007932C29B67B8B007E495D /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007932B29B67B8B007E495D /* PodcastView.swift */; };
+		4007932E29B67BA5007E495D /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007932D29B67BA5007E495D /* Podcast.swift */; };
+		4007933029B67BCF007E495D /* PodcastAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007932F29B67BCF007E495D /* PodcastAPIClient.swift */; };
+		4007933229B68CA7007E495D /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4007933129B68CA7007E495D /* PodcastCell.xib */; };
+		4007933429B68CD8007E495D /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007933329B68CD8007E495D /* PodcastCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4007930F29B67966007E495D /* ProgrammaticPodcasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammaticPodcasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4007931229B67966007E495D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4007931429B67966007E495D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4007931629B67966007E495D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4007931929B67966007E495D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4007931B29B67967007E495D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4007931E29B67967007E495D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4007932029B67967007E495D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4007932929B67B58007E495D /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
+		4007932B29B67B8B007E495D /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
+		4007932D29B67BA5007E495D /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		4007932F29B67BCF007E495D /* PodcastAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastAPIClient.swift; sourceTree = "<group>"; };
+		4007933129B68CA7007E495D /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
+		4007933329B68CD8007E495D /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4007932829B67B33007E495D /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +68,12 @@
 			children = (
 				4007931229B67966007E495D /* AppDelegate.swift */,
 				4007931429B67966007E495D /* SceneDelegate.swift */,
-				4007931629B67966007E495D /* ViewController.swift */,
-				4007931829B67966007E495D /* Main.storyboard */,
+				4007932929B67B58007E495D /* PodcastViewController.swift */,
+				4007933129B68CA7007E495D /* PodcastCell.xib */,
+				4007933329B68CD8007E495D /* PodcastCell.swift */,
+				4007932F29B67BCF007E495D /* PodcastAPIClient.swift */,
+				4007932B29B67B8B007E495D /* PodcastView.swift */,
+				4007932D29B67BA5007E495D /* Podcast.swift */,
 				4007931B29B67967007E495D /* Assets.xcassets */,
 				4007931D29B67967007E495D /* LaunchScreen.storyboard */,
 				4007932029B67967007E495D /* Info.plist */,
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = ProgrammaticPodcasts;
+			packageProductDependencies = (
+				4007932729B67B33007E495D /* ImageKit */,
+			);
 			productName = ProgrammaticPodcasts;
 			productReference = 4007930F29B67966007E495D /* ProgrammaticPodcasts.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 4007930629B67966007E495D;
+			packageReferences = (
+				4007932629B67B33007E495D /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 4007931029B67966007E495D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +147,7 @@
 			files = (
 				4007931F29B67967007E495D /* LaunchScreen.storyboard in Resources */,
 				4007931C29B67967007E495D /* Assets.xcassets in Resources */,
-				4007931A29B67966007E495D /* Main.storyboard in Resources */,
+				4007933229B68CA7007E495D /* PodcastCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +158,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4007931729B67966007E495D /* ViewController.swift in Sources */,
+				4007932C29B67B8B007E495D /* PodcastView.swift in Sources */,
+				4007932E29B67BA5007E495D /* Podcast.swift in Sources */,
+				4007933029B67BCF007E495D /* PodcastAPIClient.swift in Sources */,
 				4007931329B67966007E495D /* AppDelegate.swift in Sources */,
 				4007931529B67966007E495D /* SceneDelegate.swift in Sources */,
+				4007932A29B67B58007E495D /* PodcastViewController.swift in Sources */,
+				4007933429B68CD8007E495D /* PodcastCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4007931829B67966007E495D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4007931929B67966007E495D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4007931D29B67967007E495D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +308,6 @@
 				INFOPLIST_FILE = ProgrammaticPodcasts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +335,6 @@
 				INFOPLIST_FILE = ProgrammaticPodcasts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4007932629B67B33007E495D /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4007932729B67B33007E495D /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4007932629B67B33007E495D /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4007930729B67966007E495D /* Project object */;
 }
