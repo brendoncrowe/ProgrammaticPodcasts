@@ -59,7 +59,7 @@ extension PodcastViewController: UICollectionViewDataSource {
         let podcast = podcasts[indexPath.row]
         cell.configureCell(for: podcast)
         cell.backgroundColor = .white
-        cell.layer.cornerRadius = 16
+        cell.layer.cornerRadius = 8
         return cell
     }
 }
@@ -78,4 +78,15 @@ extension PodcastViewController: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets(top: 10, left: 5, bottom: 5, right: 5)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let podcast = podcasts[indexPath.row]
+        
+        let podcastDetailVC = UIStoryboard(name: "PodcastDetail", bundle: nil)
+        
+        guard let podcastDetailController = podcastDetailVC.instantiateViewController(withIdentifier: "PodcastDetailController") as? PodcastDetailController else {
+            fatalError("could not load PodcastDetailController")
+        }
+        podcastDetailController.podcast = podcast
+        navigationController?.pushViewController(podcastDetailController, animated: true)
+    }
 }

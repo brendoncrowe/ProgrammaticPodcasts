@@ -29,7 +29,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcast Collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB3-Qp-Saw">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcast Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB3-Qp-Saw">
                         <rect key="frame" x="136" y="63" width="244" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -51,9 +51,9 @@
             </collectionViewCellContentView>
             <size key="customSize" width="555" height="239"/>
             <connections>
-                <outlet property="podcastCollectionLabel" destination="WB3-Qp-Saw" id="jgD-8o-Lu1"/>
+                <outlet property="podcastArtistLabel" destination="WB3-Qp-Saw" id="st5-uQ-BYA"/>
+                <outlet property="podcastCollectionLabel" destination="otM-Zt-kvH" id="FBg-AZ-uZ3"/>
                 <outlet property="podcastImageView" destination="dKa-fu-LAB" id="Umz-U1-7CW"/>
-                <outlet property="podcastNameLabel" destination="otM-Zt-kvH" id="PK6-Iy-ZW6"/>
             </connections>
             <point key="canvasLocation" x="341.98473282442745" y="-10.563380281690142"/>
         </collectionViewCell>

@@ -18,6 +18,8 @@
 		4007933029B67BCF007E495D /* PodcastAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007932F29B67BCF007E495D /* PodcastAPIClient.swift */; };
 		4007933229B68CA7007E495D /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4007933129B68CA7007E495D /* PodcastCell.xib */; };
 		4007933429B68CD8007E495D /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007933329B68CD8007E495D /* PodcastCell.swift */; };
+		4007933629B6966C007E495D /* PodcastDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007933529B6966C007E495D /* PodcastDetail.storyboard */; };
+		4007933829B69696007E495D /* PodcastDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007933729B69696007E495D /* PodcastDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		4007932F29B67BCF007E495D /* PodcastAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastAPIClient.swift; sourceTree = "<group>"; };
 		4007933129B68CA7007E495D /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
 		4007933329B68CD8007E495D /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
+		4007933529B6966C007E495D /* PodcastDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PodcastDetail.storyboard; sourceTree = "<group>"; };
+		4007933729B69696007E495D /* PodcastDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				4007932929B67B58007E495D /* PodcastViewController.swift */,
 				4007933129B68CA7007E495D /* PodcastCell.xib */,
 				4007933329B68CD8007E495D /* PodcastCell.swift */,
+				4007933529B6966C007E495D /* PodcastDetail.storyboard */,
+				4007933729B69696007E495D /* PodcastDetailController.swift */,
 				4007932F29B67BCF007E495D /* PodcastAPIClient.swift */,
 				4007932B29B67B8B007E495D /* PodcastView.swift */,
 				4007932D29B67BA5007E495D /* Podcast.swift */,
@@ -145,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4007933629B6966C007E495D /* PodcastDetail.storyboard in Resources */,
 				4007931F29B67967007E495D /* LaunchScreen.storyboard in Resources */,
 				4007931C29B67967007E495D /* Assets.xcassets in Resources */,
 				4007933229B68CA7007E495D /* PodcastCell.xib in Resources */,
@@ -163,6 +170,7 @@
 				4007933029B67BCF007E495D /* PodcastAPIClient.swift in Sources */,
 				4007931329B67966007E495D /* AppDelegate.swift in Sources */,
 				4007931529B67966007E495D /* SceneDelegate.swift in Sources */,
+				4007933829B69696007E495D /* PodcastDetailController.swift in Sources */,
 				4007932A29B67B58007E495D /* PodcastViewController.swift in Sources */,
 				4007933429B68CD8007E495D /* PodcastCell.swift in Sources */,
 			);
